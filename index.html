@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paginação</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 40px;
+    }
+
+    ul.paginacao {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        border: 1px solid #ddd;
+        width: fit-content;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    ul.paginacao li {
+        border-right: 1px solid #ddd;
+    }
+
+    ul.paginacao li:last-child {
+        border-right: none;
+    }
+
+    ul.paginacao li a {
+        display: block;
+        padding: 12px 18px;
+        text-decoration: none;
+        color: #3498db;
+        background: white;
+        transition: 0.3s;
+    }
+
+    /* Hover */
+    ul.paginacao li a:hover {
+        background: #f1f1f1;
+    }
+
+    /* Página ativa */
+    ul.paginacao li.ativo a {
+        background: #e0e0e0;
+        color: #000;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+<h3>Desafio - aula 3</h3>
+
+<ul class="paginacao">
+    <li><a href="#">«</a></li>
+    <li><a href="pagina1.html">1</a></li>
+    <li><a href="pagina2.html">2</a></li>
+    <li><a href="pagina3.html">3</a></li>
+    <li><a href="pagina4.html">4</a></li>
+    <li><a href="#">»</a></li>
+</ul>
+
+</body>
+</html>
